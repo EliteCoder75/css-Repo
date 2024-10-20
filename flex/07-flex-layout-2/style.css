@@ -19,7 +19,8 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
+  
+  box-sizing: border-box; 
 }
 
 .card {
