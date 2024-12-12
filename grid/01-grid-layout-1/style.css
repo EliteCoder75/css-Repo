@@ -4,11 +4,23 @@ html {
   margin: 0;
 }
 
+ /* - The gap is 15px
+- The grid has two columns
+- The grid has four rows
+- The second column is three times larger than the first
+- The third row is five times larger than the others
+- The header and footer elements span across both columns
+- The sidebar element only spans across the first column
+- The nav and article elements span across the second column */ 
+
 .container {
+  display: grid;
+  grid-template-rows: 130px 130px 650px 130px;
+  grid-template-columns: 200px 600px;
+  gap: 15px;
   text-align: center;
   height: 100%;
   padding: 16px;
-  box-sizing: border-box;
 }
 
 .container div {
@@ -22,10 +34,18 @@ html {
 
 .header {
   background-color: #006157;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .nav {
@@ -38,6 +58,11 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
 }
 
 .article p {
