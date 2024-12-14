@@ -15,11 +15,12 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: 130px 130px 650px 130px;
-  grid-template-columns: 200px 600px;
+  grid-template-rows: 100px 100px 500px 100px;
+  grid-template-columns: 300px 900px;
   gap: 15px;
   text-align: center;
   height: 100%;
+  padding: 15px;
 }
 
 .container div {
